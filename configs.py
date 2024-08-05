@@ -25,9 +25,9 @@ PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 DISABLE_CHANNEL_BUTTON = bool(environ.get('DISABLE_CHANNEL_BUTTON', False))
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://{}/".format(FQDN)
+    URL = "https://http://daily-roseanne-akhand055-56347f72.koyeb.app//".format(FQDN)
 else:
-    URL = "http://{}/".format(FQDN)
+    URL = "http://http://daily-roseanne-akhand055-56347f72.koyeb.app//".format(FQDN)
 UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', None))
 BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001987654567")).split())) 
 STREAM_LOGS = environ.get('STREAM_LOGS','-1001895607162')
